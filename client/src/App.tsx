@@ -11,7 +11,9 @@ export const App = () => (
   <ChakraProvider theme={theme}>
     <BrowserRouter>
       <Header />
-      <Login />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </BrowserRouter>
   </ChakraProvider>
 );
