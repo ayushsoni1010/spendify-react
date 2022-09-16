@@ -15,6 +15,8 @@ export const ColorModeSwitcher: React.FunctionComponent<
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
+  const isDarkMode = text === 'light' ? 'true' : 'false';
+  localStorage.setItem('isDarkMode', isDarkMode);
 
   return (
     <IconButton
