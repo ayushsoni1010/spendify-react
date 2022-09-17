@@ -5,7 +5,8 @@ import './styles/index.css';
 
 /***** Component Imports *****/
 import Header from './components/Header';
-import Login from './components/Login';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -13,6 +14,7 @@ export const App = () => (
       <Header />
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   </ChakraProvider>
