@@ -5,7 +5,7 @@ import './styles/index.css';
 
 /***** Component Imports *****/
 import Header from './components/Header';
-import Login from './components/Login';
+import Login from './pages/Login';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
