@@ -10,8 +10,11 @@ import {
   Button,
   useColorModeValue,
   useColorMode,
+  Image,
   ButtonGroup,
 } from '@chakra-ui/react';
+
+import logo from '../../assets/svgs/spendify-logo.svg';
 
 const Header: React.FunctionComponent = () => {
   const colorModeText = useColorModeValue('light', 'dark');
@@ -27,29 +30,21 @@ const Header: React.FunctionComponent = () => {
           px={{ base: 4, md: 7 }}
           alignSelf={'center'}
         >
-          <Flex flex={{ base: 0 }} justify={{ base: 'start' }}>
-            <Text fontFamily="heading" fontSize="2xl" fontWeight={800}>
-              <Link
-                as={NavLink}
-                to="/"
-                textDecoration="none"
-                style={{ textDecoration: 'none' }}
-              >
-                🧿
-              </Link>
-            </Text>
-            <Text fontFamily="heading" fontSize="2xl" fontWeight={800}>
-              <Link
-                as={NavLink}
-                to="/"
-                textDecoration="none"
-                style={{ textDecoration: 'none' }}
-                className={colorModeText === 'light' ? 'navbar-brand' : ''}
-              >
-                Spendify
-              </Link>
-            </Text>
-          </Flex>
+          <Stack
+            flex={{ base: 1, md: 1 }}
+            justify={'start'}
+            direction={'row'}
+            align={'center'}
+          >
+            <Link
+              as={NavLink}
+              to="/"
+              textDecoration="none"
+              style={{ textDecoration: 'none' }}
+            >
+              <Image src={logo} w={'28'} alt="logo" />
+            </Link>
+          </Stack>
           <Stack
             flex={{ base: 1, md: 1 }}
             justify={'end'}

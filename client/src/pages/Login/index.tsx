@@ -76,6 +76,7 @@ const Login: React.FunctionComponent = () => {
                   type={'email'}
                   name="email"
                   id="email"
+                  variant="filled"
                   value={email}
                   onChange={handleChangeEmail}
                   placeholder="Your email address"
@@ -94,6 +95,7 @@ const Login: React.FunctionComponent = () => {
                   type={'password'}
                   name="password"
                   id="password"
+                  variant="filled"
                   value={password}
                   onChange={handleChangePassword}
                   placeholder="Your password"
@@ -117,7 +119,7 @@ const Login: React.FunctionComponent = () => {
                     : { bgColor: 'blue.400' }
                 }
                 _focus={{
-                  transform: 'scale(1)',
+                  transform: 'scale(1.02)',
                 }}
               >
                 Log In

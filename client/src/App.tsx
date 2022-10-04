@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
-
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
